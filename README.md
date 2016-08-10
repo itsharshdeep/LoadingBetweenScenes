@@ -59,3 +59,5 @@ SceneController.LoadPreviousScene(1.25f);
 You can remain this parameters empty. With empty field it will automatically assumes that you don’t want to put the delay in that 
 
 *** There is a Checkbox/bool tick marked/True in Scene2 on GameObject named ‘Script’ component ‘LoadingSceneDemo.cs’ by which it will put some delay of 1.5 seconds from Scene 2 -> Scene 1. But in Scene1 there is no checkbox marked. So no delay from Scene1 -> Scene2 ****
+
+*** If you want to change the LoadingScene Name. You need to update that in Constants.cs Class***
