@@ -9,9 +9,7 @@ public class LoadingSceneDemo : MonoBehaviour
 {
 	public bool requiredCustomDelay = true;
 
-	void Start ()
-	{
-	}
+	void Start (){}
 
 	// Calling from outside on the 'Load Scene 1' & 'Load Scene 2' button
 	public void LoadScene (string sceneName)

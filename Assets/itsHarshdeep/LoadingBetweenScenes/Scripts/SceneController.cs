@@ -32,13 +32,14 @@ namespace ItsHarshdeep.LoadingScene.Controller
 			#else
 			previousScene = Application.loadedLevelName.ToString();
 			#endif
+
 			scene = sceneName;
+
 			#if (!UNITY_5_2 ||  !UNITY_5_2_3)
-			SceneManager.LoadSceneAsync (Constants.LOADING_SCENE_NAME);
+			SceneManager.LoadSceneAsync (Constants.Constants.LOADING_SCENE_NAME);
 			#else
 			Application.LoadLevelAsync (Constants.Constants.LOADING_SCENE_NAME);
 			#endif
-		
 		}
 
 		public static void LoadPreviousScene (float loadSceneDelayTime = 0)
@@ -48,7 +49,5 @@ namespace ItsHarshdeep.LoadingScene.Controller
 			else 
 				LoadLevel (previousScene, loadSceneDelayTime);
 		}
-
-
 	}
 }
