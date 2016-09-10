@@ -1,15 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
+using ItsHarshdeep.LoadingScene.Constants;
 
 //Add following header files
-using ItsHarshdeep.LoadingScene.Constants;
 using ItsHarshdeep.LoadingScene.Controller;
+
+/*Example Class
+* // Adding header files 
+* using ItsHarshdeep.LoadingScene.Controller;
+*
+* public class YourClassName : MonoBehaviour 
+* {
+* or
+* public class YourClassName 
+* {
+* // Your code 
+*
+* public void LoadScene(){
+* SceneController.LoadLevel ("sceneName", x.xf); // if you want to put custom delay
+* or 
+* SceneController.LoadLevel ("sceneName"); // if you don't want to put any delay
+* }
+* // Your code 
+* }
+* }
+*
+*/
 
 public class LoadingSceneDemo : MonoBehaviour
 {
 	public bool requiredCustomDelay = true;
 
-	void Start (){}
+	void Start ()
+	{
+	}
 
 	// Calling from outside on the 'Load Scene 1' & 'Load Scene 2' button
 	public void LoadScene (string sceneName)
@@ -20,7 +44,7 @@ public class LoadingSceneDemo : MonoBehaviour
 			SceneController.LoadLevel (sceneName);
 			
 		print ("Previous Scene name was : " + SceneController.previousScene);
-	} 
+	}
 
 	// This will automatically load the previously loaded scene
 	public void LoadPreviousScene ()
